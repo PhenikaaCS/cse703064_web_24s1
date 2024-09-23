@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.menu-large{
+    display: none;
+}
+.menu-mobile{
+    width: 100;  
+    background-color: rgb(8, 111, 195);
+    height: 100vh;
+    padding-top:50px;
+    text-align: center;
+    position: relative;
+}
+.menu-mobile .close-button{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-weight: 900;
+    color:#fff;
+}
+.menu-mobile>ul:first-child{
+    text-transform: uppercase;
+    border-bottom: 1px solid #fefefe;
+    margin-bottom:40px;
+    padding-bottom: 40px;
+}
+.menu-mobile li{
+    margin:5px;
+}
+.menu-mobile>ul:last-child>li:last-child{
+    margin-top:20px;
+}
+.menu-mobile>ul:last-child>li:last-child a{
+  
+    padding: 10px 50px;
+    border: 1px solid #fefefe;
+    border-radius: 30px;
+}
+.menu-mobile a, .menu a{
+    color:#fff;
+}
+
+    .menu-mobile{
+        display: none;
+    }
+
+.menu-mobile-collapse{
+    display: flex;
+    padding:10px;
+    justify-content:space-between
+}
+.login, .menu-button, .signup{
+    color: blue;
+    padding:8px;
+    border:1px solid blue;
+    border-radius: 5px;
+}
+.logo{
+    width:40px;
+    height:40px;
+}
+.banner{
+    background-color: rgb(8, 111, 195);
+    color:#fefefe;
+}
+.wrapper{
+    margin: auto;
+    text-align: center;
+}
+.banner .more-button{
+    background:hsl(0, 0%, 100%);
+    border-radius:20px;
+    padding:10px 40px;
+    display: inline-block;
+    margin:20px;
+}
+.banner .wrapper{
+    padding:40px 20px 0px;
+}
+.showmore{
+    background-color: rgb(11, 11, 148);
+}
+
+.banner .features{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .features li{
+    width:40%;
+}
+.banner .features li img{
+    width: 100%;
+}
+.showmore h3 span{
+    display: none;
+}
+.news{
+    text-align: center;
+}
+.news>li{
+    padding: 30px ;
+}
+.news>li:nth-child(even){
+    background-color: #d5d2d2;
+}
+.news>li>img{
+    width: 60%;
+}
+.news>li h3{
+    margin:20px 0px;
+    color:lightskyblue;
+
+}
+.news>li p{
+    color: #333;
+}
+li>.des a{
+    display: inline-block;
+    margin-top:20px;
+    padding:8px 40px;
+    font-weight: bold;
+    color:rgb(49, 116, 158);
+    border:2px solid rgb(22, 117, 149);
+    border-radius: 30px;
+}
+.checkout-box{
+    background: #d5d5d5;
+}
+.bottom div{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0;
+}
+.bottom h3{
+    margin-bottom:20px;
+    font-size: 30px;
+     width:70%;
+     text-align: center;
+}
+.checkout-box h3{
+    
+    color:rgb(49, 116, 158);
+   
+}
+.checkout-box>div div{
+    padding:0;
+    width:50%;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.checkout-box>div img{
+    width:30%;
+    margin-right:3%;
+}
+.checkout-box>div img:first-of-type{
+    width:71%;
+}
+.join-box{
+    background:rgb(78, 175, 232);
+}
+.join-box h3{
+    color:#fff;
+    font-weight: normal;
+}
+.bottom .join-box a{
+    background:#fff;
+    border-color:#fff;
+}
+footer{
+    padding:40px;
+    font-family:Roboto;
+}
+footer a{
+    font-weight:bold;
+    padding: 5px 40px 5px 0px;
+    color:#333;
+}
+footer li{
+    margin-bottom:10px;
+}
+.help-links,
+.footer-menu,
+.copy-right
+{
+    display:flex;
+    flex-wrap:wrap;
+    padding-bottom:10px;
+    border-bottom:2px solid #333;
+    padding-top:20px;
+}
+.footer-menu a,
+.copy-right a,
+footer p{
+    color:#999;
+}
+footer p{
+    margin:20px 0;
+}
+
+@media screen and (min-width:600px) {
+    .menu-mobile
+    {
+        display: none;
+    }
+    .features>li{
+        display:none;
+    }
+    .features>li:last-child{
+        display:block;
+        width:60%;
+        margin:auto;
+    }
+    .news>li{
+        display:flex;
+        align-items:center;
+    }
+    .news>li>img{
+        width:50%;
+    
+    }
+    .news>li:nth-child(odd)>img{
+        order:1;
+    }
+    .checkout-box>div img:first-of-type{
+        width:30%;
+    }
+}
+@media screen and (min-width:800px) {
+    .menu-mobile-collapse{
+        display: none;
+    }
+    .menu-large, .nameplate{
+        display:flex;
+    }
+    .nameplate{
+        justify-content: space-between;
+        padding:10px 20px;
+        align-items: center;
+    }
+    .menu.menu-large a{
+        color:#333;
+        text-transform: uppercase;
+        padding:0 10px;
+    }
+    .buttons a{
+        margin-right:10px;
+    }
+    .features>li, .features>li:last-child{
+        display:block;
+        width:20%;
+        margin:10px;
+    }
+    .news>li>img{
+        width:30%;
+    }
+}
