@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+.nameplate, .banner, .bottom, footer{
+    width:100%;
+}
+.nameplate, .bottom{
+    background:#000;
+    padding:10px 20px;
+}
+.nameplate a, .bottom a{
+    color:#fff;
+}
+.nameplate{
+    text-transform: uppercase;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameplate .logo{
+    width:40px;
+    height:40px;
+}
+.nameplate .menu{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nameplate .menu ul{
+    list-style: none;
+    display:flex;
+}
+.nameplate .menu li{
+    padding:5px 10px;
+}
+.buttons{
+    padding:3px;
+}
+.buttons a{
+    padding:5px;
+    margin-left:20px;
+}
+.buttons a.donate{
+    background:red;
+}
+.buttons a.adopt{
+    background:orange;
+}
+.banner{
+    background:#cdcdcd;
+}
+.banner .content{
+    padding: 20px 40px 40px 40px;
+    text-align: center;
+}
+.banner>img{
+    width:100%;
+}
+.banner .content .title,
+.movetivation .title{
+    text-transform: uppercase;
+    display:inline-block;
+    border-top: 1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+}
+.banner .des, .banner .subdes{
+    color:#666;
+    margin-bottom:35px;
+    margin-top:20px;
+}
+.banner .areas{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    padding:0 20px;
+}
+.banner .areas img{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+}
+.banner .areas h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-top:20px;
+}
+.gallery{
+    list-style: none;
+}
+.gallery .row,
+.movetivation .row{
+    padding:30px 40px;
+    display:flex;
+}
+.gallery img,
+.movetivation img{
+    border-radius: 3px;
+    margin:3px;
+}
+.img-1, .img-2, .img-5, .img-6{
+    width:25%;
+}
+.img-3, .img-4, .img-7, .img-8{
+    width:50%;
+}
+.movetivation {
+    text-align: center;
+}
+
+.movetivation ul{
+    list-style: none;
+}
+.movetivation ul li{
+    box-sizing: content-box;
+    width:50%;
+}
+.movetivation ul li img{
+    width:100%;
+    margin-left:5px;
+    height:480px;
+}
+.bottom{
+    padding: 20px 30px;
+    color:#fff;
+}
+.login-button{
+    padding-bottom:20px;
+    border-bottom:2px solid #999;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    text-align: right;
+}
+.login-button .button{
+    background:red;
+    color:#fff;
+    border-radius: 3px;
+    padding:5px;
+}
+.bottom .nav{
+    list-style: none;
+}
+.bottom .nav li{
+    margin: 5px 0px;
+}
+footer{
+    padding:10px 30px;
+    background:#cdcdcd;
+    display:flex;
+    align-items: flex-start;
+}
+footer>img{
+    width:80px;
+    height:80px;
+}
+footer .address{
+    width:20%;
+    margin:0 15px;
+}
+footer .social-networks{
+    width:30%;
+}
+footer .social-networks ul{
+    list-style: none;
+    display: flex;
+}
+footer .social-networks img{
+    width:50px;
+    height:50px;
+    margin:5px;
+}
+footer .des{
+    flex-grow: 2 ;
+}
